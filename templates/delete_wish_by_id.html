@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post" class="form-contact">
+    {{ form.hidden_tag() }}
+    {{ form.wish_id.label() }} {{ form.wish_id() }}
+    {{ form.submit() }}
+<hr align=left width="300px">
+</form>
+{% endblock  %}

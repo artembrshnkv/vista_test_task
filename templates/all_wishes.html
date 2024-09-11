@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+
+        <table class="table">
+  <thead>
+    <tr>
+        <th>Id</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Url</th>
+        <th>Note</th>
+    </tr>
+  </thead>
+            {% for wish in all_wishes %}
+  <tbody>
+    <tr>
+        <td>{{ wish.id }}</td>
+      <td>{{ wish.title }}</td>
+      <td>{{ wish.price }}</td>
+      <td>{{ wish.url }}</td>
+        <td>{{ wish.note }}</td>
+    </tr>
+  </tbody>
+            {% endfor %}
+</table>
+    </div>
+{% endblock %}

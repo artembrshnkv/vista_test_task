@@ -1,0 +1,16 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+This is an example page
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+   {% for m in menu %}
+        <a class="nav-link active" href="{{ m.url }}">{{ m.title }}</a>
+    {% endfor %}
+</nav>
+{% endblock %}
+
+{% block content %}
+{% endblock content %}
