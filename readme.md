@@ -28,7 +28,7 @@ Run app:
 ## First run
 Create db:
 ```bash
-python create_db   # run once
+python create_db.py   # run once
 ```
 
 ## Go to
